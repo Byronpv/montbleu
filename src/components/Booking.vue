@@ -72,7 +72,7 @@ export default {
     makeQuery: function () {
       let self = this;
       axios
-        .get("http://127.0.0.1:8000/client/mybooking/" + this.id_register)
+        .get("https://reservas-hotel-app.herokuapp.com/client/mybooking/" + this.id_register)
         .then((response) => {
           self.registers = response.data;
         })
