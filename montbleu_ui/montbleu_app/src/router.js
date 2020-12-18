@@ -17,32 +17,32 @@ const router = new Router({
         routes: [
             {
                 path: '/',
-                name: "Principal",
+                name: "principal",
                 component: Principal
             },
             {
-                path: '/booking',
-                name: "Booking",
+                path: '/client/mybooking/',
+                name: "booking",
                 component: Booking
             },
             {
                 path: '/locate',
-                name: "Locate",
+                name: "locate",
                 component: Locate
             },
             {
                 path: '/about',
-                name: "About",
+                name: "about",
                 component: About
             },
             {
                 path: '/rooms',
-                name: 'Rooms',
+                name: 'rooms',
                 component: Rooms
-              },
+             },
               {
-                path: '/reserves',
-                name: 'Reserves',
+                path: '/client/auth',
+                name: 'reserves',
                 component: Reserves
               }
         ]

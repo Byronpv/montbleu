@@ -66,7 +66,7 @@
 
       <div class="btnReservar text-center">
         <br>
-        <b-button variant="outline-info" size="lg"><a href="/reserves">Reserve</a></b-button>
+        <b-button variant="outline-info" size="lg" ><a href="/reserves">Reserve</a></b-button>
       </div>
     </div>
 </template>
@@ -97,16 +97,19 @@ export default {
   display: none;
 }
   .carrusel{
-    height: 90%;
-    width: 90%;
+    height: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .btnReservar{
     background: white;
-    height: 120px;
+    height: 170px;
     z-index: 1;
+    
+    
+
   }
 
 </style>

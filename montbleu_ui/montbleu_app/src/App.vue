@@ -6,7 +6,7 @@
       <ul class="menu">
         <li><a class="links" href="/about">About</a></li>
         <li><a class="links" href="/rooms">Rooms</a></li>
-        <li><a class="links" href="/booking">My&nbsp;&nbsp;Booking</a></li>
+        <li><a class="links" href="/client/mybooking/">My&nbsp;&nbsp;Booking</a></li>
         <li><a class="links" href="">Contact</a></li>
       </ul>
     </header>
@@ -14,9 +14,9 @@
 <main class="principal">
        <div class="contenedor">
             <ul class="redes">
-                <li class="sociales"><a href="https://mail.google.com/" target="_blank" class="link_redes">Gmail</a><i class="fa fa-at gmail icon"></i></li>
-                <li class="sociales"><a href="https://twitter.com/" target="_blank" class="link_redes">Twitter</a><i class="fa fa-twitter twitter icon"></i></li>
-                <li class="sociales"><a href="https://www.facebook.com/" target="_blank" class="link_redes">Facebook</a><i class="fa fa-facebook facebook icon"></i></li>
+                <li class="sociales"><a href="https://mail.google.com/" target="_blank" class="link_redes"></a><i class="fa fa-at gmail icon"></i></li>
+                <li class="sociales"><a href="https://twitter.com/" target="_blank" class="link_redes"></a><i class="fa fa-twitter twitter icon"></i></li>
+                <li class="sociales"><a href="https://www.facebook.com/" target="_blank" class="link_redes"></a><i class="fa fa-facebook facebook icon"></i></li>
                 
             </ul>
             </div>
@@ -33,7 +33,12 @@
   </div>
 </template>
 
+
+
 <script>
+
+import Router from 'vue-router'
+
 export default {
   name: "App",
 };
@@ -115,13 +120,15 @@ header {
 
 .sociales {
     position: relative;
-    transform: translateX(-90px);
+    transform: translateX(-50px);
     background: rgba(50, 50, 85, 0.418);
     list-style: none;
     padding: 10px 0;
     transition: 0.5s;
-    width: 150px;
+    width: 100px;
     border-radius: 0 200px 200px 0;
+    cursor: pointer;
+
 }
 
 .sociales:hover:nth-child(1){
@@ -142,6 +149,7 @@ header {
     text-decoration: none;
     padding-left: 10px;
 }
+
 i{
     margin-left: 15px;
     padding: 10px;
@@ -158,11 +166,11 @@ i{
 }
 .twitter{
     position: relative;
-    left: 16px;
+    left: 30px;
 }
 .facebook{
     position: relative;
-    left: 3px;
+    left: 30px;
     }
 
     
